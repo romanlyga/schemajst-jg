@@ -263,7 +263,10 @@ models:
         name: layout
         label: Layout
         items:
-          type: datetime
+          type: enum
+          options:
+            - label: ''
+              value: ''
       - type: enum
         name: menu
         label: Menu
