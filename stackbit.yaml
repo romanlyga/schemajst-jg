@@ -260,8 +260,7 @@ models:
         name: layout
         label: Layout
         items:
-          type: enum
-          options: []
+          type: boolean
       - type: date
         name: date
         label: Date
@@ -403,6 +402,4 @@ models:
         options:
           - label: teams
             value: teams
-        label: Layout
-          value: teams
         label: Layout
