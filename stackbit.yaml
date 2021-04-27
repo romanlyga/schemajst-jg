@@ -274,10 +274,7 @@ models:
         name: layout
         label: Layout
         items:
-          type: enum
-          options:
-            - label: ''
-              value: ''
+          type: number
   service:
     type: page
     label: Service
