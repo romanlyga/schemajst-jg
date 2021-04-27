@@ -256,14 +256,6 @@ models:
         name: title
         label: Title
         description: The title of the page.
-      - type: list
-        name: layout
-        label: Layout
-        items:
-          type: enum
-          options:
-            - label: ''
-              value: ''
       - type: date
         name: date
         label: Date
@@ -278,6 +270,14 @@ models:
       - type: string
         name: bodyClass
         label: Body Class
+      - type: list
+        name: layout
+        label: Layout
+        items:
+          type: enum
+          options:
+            - label: ''
+              value: ''
   service:
     type: page
     label: Service
