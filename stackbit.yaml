@@ -259,14 +259,6 @@ models:
       - type: date
         name: date
         label: Date
-      - type: list
-        name: layout
-        label: Layout
-        items:
-          type: enum
-          options:
-            - label: ''
-              value: ''
       - type: enum
         name: menu
         label: Menu
@@ -275,6 +267,14 @@ models:
             value: main
           - label: Footer Menu
             value: footer
+      - type: list
+        name: layout
+        label: Layout
+        items:
+          type: enum
+          options:
+            - label: ''
+              value: ''
       - type: string
         name: bodyClass
         label: Body Class
