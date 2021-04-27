@@ -260,7 +260,7 @@ models:
         name: layout
         label: Layout
         items:
-          type: boolean
+          type: string
       - type: date
         name: date
         label: Date
