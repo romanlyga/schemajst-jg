@@ -260,7 +260,7 @@ models:
         name: layout
         label: Layout
         items:
-          type: file
+          type: number
       - type: date
         name: date
         label: Date
