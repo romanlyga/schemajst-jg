@@ -263,10 +263,8 @@ models:
         name: layout
         label: Layout
         items:
-          type: enum
-          options:
-            - label: ''
-              value: ''
+          type: object
+          fields: []
       - type: enum
         name: menu
         label: Menu
