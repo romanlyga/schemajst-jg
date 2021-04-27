@@ -271,7 +271,8 @@ models:
         name: layout
         label: Layout
         items:
-          type: boolean
+          type: enum
+          options: []
       - type: string
         name: bodyClass
         label: Body Class
@@ -402,4 +403,6 @@ models:
         options:
           - label: teams
             value: teams
+        label: Layout
+          value: teams
         label: Layout
