@@ -256,6 +256,11 @@ models:
         name: title
         label: Title
         description: The title of the page.
+      - type: list
+        name: layout
+        label: Layout
+        items:
+          type: boolean
       - type: date
         name: date
         label: Date
@@ -267,11 +272,6 @@ models:
             value: main
           - label: Footer Menu
             value: footer
-      - type: list
-        name: layout
-        label: Layout
-        items:
-          type: boolean
       - type: string
         name: bodyClass
         label: Body Class
