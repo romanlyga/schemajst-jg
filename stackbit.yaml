@@ -260,7 +260,8 @@ models:
         name: layout
         label: Layout
         items:
-          type: string
+          type: enum
+          options: []
       - type: date
         name: date
         label: Date
