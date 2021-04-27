@@ -271,8 +271,7 @@ models:
         name: layout
         label: Layout
         items:
-          type: enum
-          options: []
+          type: boolean
       - type: string
         name: bodyClass
         label: Body Class
