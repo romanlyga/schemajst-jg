@@ -1,11 +1,11 @@
 stackbitVersion: ~0.3.0
 ssgName: jekyll
-ssgVersion: "4.1"
+ssgVersion: '4.1'
 buildCommand: bundle exec jekyll build
-publishDir: '_site'
-staticDir: 'assets'
-uploadDir: 'images'
-dataDir: '_data'
+publishDir: _site
+staticDir: assets
+uploadDir: images
+dataDir: _data
 pagesDir: ''
 pageLayoutKey: null
 logicFields:
@@ -20,37 +20,48 @@ models:
       - type: string
         name: title
         required: true
+        label: Title
       - type: string
         name: baseurl
         hidden: true
+        label: Baseurl
       - type: string
         name: permalink
         label: Permalink
-        description: 'The output path for your pages, posts, or collections.'
-        default: '/posts/:slug:output_ext'
+        description: The output path for your pages, posts, or collections.
+        default: /posts/:slug:output_ext
         hidden: true
       - type: string
         name: google_analytics_id
+        label: Google Analytics Id
       - type: object
         name: homepage
         fields:
           - type: boolean
             name: show_call_box
+            label: Show Call Box
+        label: Homepage
       - type: object
         name: logo
         fields:
           - type: image
             name: desktop
             required: true
+            label: Desktop
           - type: image
             name: mobile
+            label: Mobile
           - type: string
             name: desktop_height
+            label: Desktop Height
+        label: Logo
       - type: object
         name: footer
         fields:
           - type: string
             name: copyright_text
+            label: Copyright Text
+        label: Footer
       - type: object
         name: seo
         fields:
@@ -81,6 +92,7 @@ models:
           - type: string
             name: meta_twitter_creator
             label: meta_twitter_creator
+        label: Seo
       - type: object
         name: collections
         fields:
@@ -89,15 +101,22 @@ models:
             fields:
               - type: boolean
                 name: output
+                label: Output
               - type: string
                 name: permalink
+                label: Permalink
+            label: Services
           - type: object
             name: team
             fields:
               - type: boolean
                 name: output
+                label: Output
               - type: string
                 name: permalink
+                label: Permalink
+            label: Team
+        label: Collections
       - type: object
         name: sass
         label: Sass
@@ -131,11 +150,15 @@ models:
         name: plugins
         label: Plugins
         hidden: true
+        items:
+          type: string
       - type: list
         name: exclude
         label: Exclude
         description: Exclude directories and/or files from the conversion.
         hidden: true
+        items:
+          type: string
   site_menus:
     type: object
     label: Site Menus
@@ -163,7 +186,7 @@ models:
     type: object
     label: Site Menu Item
     labelField: name
-    description: 'Site menu item model, defines fields for a single site menu item'
+    description: Site menu item model, defines fields for a single site menu item
     fields:
       - type: string
         name: identifier
@@ -202,6 +225,7 @@ models:
         required: true
       - type: string
         name: description
+        label: Description
       - type: image
         name: intro_image
         label: Intro Image
@@ -219,11 +243,14 @@ models:
         options:
           - label: home
             value: home
+        label: Layout
   basicpage:
     type: page
     label: Basic Page
-    match: '*.md'
-    exclude: index.md
+    match:
+      - '*.md'
+    exclude:
+      - index.md
     fields:
       - type: string
         name: title
@@ -232,13 +259,11 @@ models:
       - type: date
         name: date
         label: Date
-      - type: enum
+      - type: list
         name: layout
-        options:
-          - label: page
-            value: page
-          - label: contact
-            value: contact
+        label: Layout
+        items:
+          type: string
       - type: enum
         name: menu
         label: Menu
@@ -249,6 +274,7 @@ models:
             value: footer
       - type: string
         name: bodyClass
+        label: Body Class
   service:
     type: page
     label: Service
@@ -256,19 +282,25 @@ models:
     fields:
       - type: string
         name: title
+        label: Title
       - type: date
         name: date
+        label: Date
       - type: boolean
         name: draft
+        label: Draft
       - type: boolean
         name: featured
+        label: Featured
       - type: number
         name: weight
+        label: Weight
       - type: enum
         name: layout
         options:
           - label: service
             value: service
+        label: Layout
   services:
     type: page
     label: Services Overview
@@ -297,6 +329,7 @@ models:
         options:
           - label: services
             value: services
+        label: Layout
   team:
     type: page
     label: Team
@@ -337,6 +370,7 @@ models:
         options:
           - label: team
             value: team
+        label: Layout
   teams:
     type: page
     label: Team Overview
@@ -362,8 +396,10 @@ models:
         description: Hide the intro image on mobile screen sizes
       - type: string
         name: permalink
+        label: Permalink
       - type: enum
         name: layout
         options:
           - label: teams
             value: teams
+        label: Layout
