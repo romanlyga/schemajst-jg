@@ -271,7 +271,10 @@ models:
         name: layout
         label: Layout
         items:
-          type: boolean
+          type: enum
+          options:
+            - label: ''
+              value: ''
       - type: string
         name: bodyClass
         label: Body Class
