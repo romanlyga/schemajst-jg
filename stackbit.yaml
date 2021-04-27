@@ -274,7 +274,8 @@ models:
         name: layout
         label: Layout
         items:
-          type: number
+          type: enum
+          options: []
   service:
     type: page
     label: Service
@@ -402,4 +403,6 @@ models:
         options:
           - label: teams
             value: teams
+        label: Layout
+          value: teams
         label: Layout
