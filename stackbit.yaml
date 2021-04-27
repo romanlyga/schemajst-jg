@@ -260,10 +260,7 @@ models:
         name: layout
         label: Layout
         items:
-          type: enum
-          options:
-            - label: ''
-              value: ''
+          type: number
       - type: date
         name: date
         label: Date
